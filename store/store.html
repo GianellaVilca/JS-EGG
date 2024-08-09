@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <h1>Calculadora de Compra</h1>
+
+    <div>
+        <label for="cantidadProductos">¿Cuántos productos deseas comprar?</label>
+        <input type="number" id="cantidadProductos" placeholder="Cantidad de productos">
+        <button onclick="generarCampos()">Generar Campos</button>
+    </div>
+
+    <form id="formProductos"></form>
+
+    <button onclick="calcularTotal()">Calcular Total</button>
+
+    <h2>Resumen de la compra:</h2>
+
+    <p id="resultado"></p>
+
+    <script src="store.js"></script>
+</body>
+</html>
